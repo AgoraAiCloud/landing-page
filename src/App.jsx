@@ -232,10 +232,9 @@ export default function App() {
             <a href="#faq">FAQ</a>
           </div>
           <div className="footer-section">
-            <h4>Legal</h4>
-            <a href="#">Terms</a>
-            <a href="#">Privacy</a>
-            <a href="#">Contact</a>
+            <h4>Support</h4>
+            <a href="mailto:agora@agorasystems.cloud">Email Support</a>
+            <p style={{fontSize: '0.9em', marginTop: '0.5em', color: '#666'}}>agora@agorasystems.cloud</p>
           </div>
         </div>
         <p className="footer-copyright">© 2026 AgoraSystems. All rights reserved.</p>
