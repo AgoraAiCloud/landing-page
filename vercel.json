@@ -3,9 +3,6 @@
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "env": {
-    "VITE_APP_GUMROAD_LINK": "@GUMROAD_LINK"
-  },
   "headers": [
     {
       "source": "/",
