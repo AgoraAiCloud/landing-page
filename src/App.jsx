@@ -7,8 +7,8 @@ export default function App() {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (email) {
-      // Open Gumroad link
-      window.location.href = `https://agoraai.gumroad.com/l/OpenClawDockerCompleteGuide?email=${encodeURIComponent(email)}`
+      // Open Stripe payment link (Tier 1 - $67)
+      window.location.href = `https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00`
       setSubmitted(true)
       setEmail('')
     }
@@ -32,33 +32,29 @@ export default function App() {
       <section className="hero">
         <div className="hero-content">
           <h1>OpenClaw Docker Setup for Windows</h1>
-          <p className="subtitle">One-Click Installation • Complete Guide • 12 Premium Skills</p>
+          <p className="subtitle">$67 Complete Guide • One-Click Installer • 12 Premium Skills</p>
           <p className="description">
             Stop wrestling with Docker on Windows. Get a production-ready OpenClaw environment in minutes with our comprehensive guide, automated installer, and 12 hand-picked skills.
           </p>
           
           <div className="cta-section">
-            <form onSubmit={handleSubmit} className="email-form">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <button type="submit" className="cta-button">Get Access Now</button>
-            </form>
-            <p className="trust-text">✓ Instant access • ✓ 30-day guarantee • ✓ No spam</p>
+            <button 
+              onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'} 
+              className="cta-button"
+            >
+              Get Access Now - $67
+            </button>
+            <p className="trust-text">✓ Instant access • ✓ Secure payment • ✓ Lifetime updates</p>
           </div>
 
           <div className="stats">
             <div className="stat">
-              <div className="stat-number">50+</div>
-              <div className="stat-label">Pages of Documentation</div>
+              <div className="stat-number">$67</div>
+              <div className="stat-label">Complete Guide + Installer</div>
             </div>
             <div className="stat">
-              <div className="stat-number">300+</div>
-              <div className="stat-label">Lines in Installer</div>
+              <div className="stat-number">30 min</div>
+              <div className="stat-label">From Start to Live</div>
             </div>
             <div className="stat">
               <div className="stat-number">12</div>
@@ -149,11 +145,11 @@ export default function App() {
 
       {/* Pricing Section */}
       <section id="pricing" className="pricing">
-        <h2>Simple Pricing</h2>
+        <h2>Get Started - $67</h2>
         <div className="pricing-card">
-          <h3>OpenClaw Docker Complete</h3>
-          <div className="price">$97</div>
-          <p className="price-subtitle">One-time purchase • Lifetime access • Updates included</p>
+          <h3>Docker Mastery Blueprint</h3>
+          <div className="price">$67</div>
+          <p className="price-subtitle">One-time purchase • Instant access • Lifetime updates</p>
           <ul className="price-features">
             <li>✓ Complete 50+ page guide (PDF + Web)</li>
             <li>✓ One-click PowerShell installer</li>
@@ -161,13 +157,17 @@ export default function App() {
             <li>✓ 12 premium skills pre-configured</li>
             <li>✓ Extensions setup guide</li>
             <li>✓ Troubleshooting & optimization tips</li>
-            <li>✓ 30-day money-back guarantee</li>
+            <li>✓ Email support</li>
             <li>✓ Free updates forever</li>
           </ul>
-          <button className="pricing-button" onClick={() => document.querySelector('input[type="email"]').focus()}>
-            Get Started
+          <button className="pricing-button" onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'}>
+            Get Started Now - $67
           </button>
         </div>
+        
+        <p style={{textAlign: 'center', marginTop: '2em', color: '#666', fontSize: '0.9em'}}>
+          <strong>Need hands-on help?</strong> Upgrade to <a href="https://buy.stripe.com/14A6oJ88caYd8Zf8WW4ow03" style={{color: '#6B46C1'}}>Personal Assistant Setup ($397)</a> for custom video + 30-day support
+        </p>
       </section>
 
       {/* FAQ Section */}
@@ -205,17 +205,13 @@ export default function App() {
       <section className="final-cta">
         <h2>Ready to Stop Struggling With Docker?</h2>
         <p>Get everything you need in one complete package</p>
-        <form onSubmit={handleSubmit} className="final-form">
-          <input
-            type="email"
-            placeholder="your@email.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <button type="submit" className="final-button">Get Instant Access - $97</button>
-        </form>
-        <p className="guarantee">🔒 30-day money-back guarantee • SSL secured • Privacy protected</p>
+        <button 
+          className="final-button"
+          onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'}
+        >
+          Get Instant Access Now - $67
+        </button>
+        <p className="guarantee">🔒 Secure payment • Instant delivery • Lifetime updates</p>
       </section>
 
       {/* Footer */}
