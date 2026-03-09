@@ -262,12 +262,12 @@ export default function App() {
       {/* Final CTA */}
       <section className="final-cta">
         <h2>Ready to Stop Struggling With Docker?</h2>
-        <p>Get everything you need in one complete package</p>
+        <p>Choose your path and get started today</p>
         <button 
           className="final-button"
-          onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'}
+          onClick={() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})}
         >
-          Get Instant Access Now - $67
+          View Pricing - From $97
         </button>
         <p className="guarantee">🔒 Secure payment • Instant delivery • Lifetime updates</p>
       </section>
@@ -296,4 +296,3 @@ export default function App() {
     </div>
   )
 }
-// Rebuild trigger
