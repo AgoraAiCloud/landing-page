@@ -33,6 +33,7 @@ export default function App() {
   }, [])
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [showGuide, setShowGuide] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -173,30 +174,57 @@ export default function App() {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* Pricing Section - TWO PRODUCTS */}
       <section id="pricing" className="pricing">
-        <h2>Get Started - $97</h2>
-        <div className="pricing-card">
-          <h3>Docker Mastery Blueprint</h3>
-          <div className="price">$97</div>
-          <p className="price-subtitle">One-time purchase • Instant access • Lifetime updates</p>
-          <ul className="price-features">
-            <li>✓ Complete 50+ page guide (PDF + Web)</li>
-            <li>✓ One-click PowerShell installer</li>
-            <li>✓ Docker Compose orchestration config</li>
-            <li>✓ 12 premium skills pre-configured</li>
-            <li>✓ Extensions setup guide</li>
-            <li>✓ Troubleshooting & optimization tips</li>
-            <li>✓ Email support</li>
-            <li>✓ Free updates forever</li>
-          </ul>
-          <button className="pricing-button" onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'}>
-            Get Started Now - $97
-          </button>
-        </div>
+        <h2>Choose Your Path</h2>
+        <p style={{textAlign: 'center', fontSize: '1.1em', color: '#666', marginBottom: '3em'}}>
+          Start simple or go professional. Both include everything you need to succeed.
+        </p>
         
-        <p style={{textAlign: 'center', marginTop: '2em', color: '#666', fontSize: '0.9em'}}>
-          <strong>Need hands-on help?</strong> Upgrade to <a href="https://buy.stripe.com/14A6oJ88caYd8Zf8WW4ow03" style={{color: '#6B46C1'}}>Personal Assistant Setup ($397)</a> for custom video + 30-day support
+        <div className="pricing-grid">
+          {/* TIER 1: Docker Guide */}
+          <div className="pricing-card">
+            <div className="tier-label">TIER 1</div>
+            <h3>Docker Setup Guide</h3>
+            <div className="price">$97</div>
+            <p className="price-subtitle">One-time • Lifetime access • Free updates</p>
+            <button className="pricing-button" onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'}>
+              Get Started - $97
+            </button>
+            <ul className="price-features">
+              <li>✓ 50+ page complete guide</li>
+              <li>✓ One-click installer script</li>
+              <li>✓ Docker Compose config</li>
+              <li>✓ 12 premium skills</li>
+              <li>✓ Troubleshooting guide</li>
+              <li>✓ Email support</li>
+              <li>✓ Lifetime updates</li>
+            </ul>
+          </div>
+
+          {/* TIER 2: Premium Guide */}
+          <div className="pricing-card pricing-card-premium">
+            <div className="tier-label tier-label-premium">TIER 2 • MOST POPULAR</div>
+            <h3>Premium Interactive Guide</h3>
+            <div className="price">$197</div>
+            <p className="price-subtitle">One-time • Lifetime access • Free updates</p>
+            <button className="pricing-button pricing-button-premium" onClick={() => window.location.href='https://buy.stripe.com/14A6oJ88caYd8Zf8WW4ow03'}>
+              Get Premium - $197
+            </button>
+            <ul className="price-features">
+              <li>✓ Everything in Tier 1</li>
+              <li>✓ Interactive web guide (dark/light mode)</li>
+              <li>✓ Code syntax highlighting & copy buttons</li>
+              <li>✓ Expandable sections & TOC</li>
+              <li>✓ Video walkthroughs</li>
+              <li>✓ 30-day email support</li>
+              <li>✓ Configuration review (1 session)</li>
+            </ul>
+          </div>
+        </div>
+
+        <p style={{textAlign: 'center', marginTop: '3em', color: '#666', fontSize: '0.95em'}}>
+          <strong>Need hands-on setup?</strong> Book <a href="mailto:agora@agorasystems.cloud" style={{color: '#6B46C1', fontWeight: '600'}}>1-on-1 configuration session</a> ($397)
         </p>
       </section>
 
