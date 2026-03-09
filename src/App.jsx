@@ -7,7 +7,7 @@ export default function App() {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (email) {
-      // Open Stripe payment link (Tier 1 - $67)
+      // Open Stripe payment link (Tier 1 - $97)
       window.location.href = `https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00`
       setSubmitted(true)
       setEmail('')
@@ -32,7 +32,7 @@ export default function App() {
       <section className="hero">
         <div className="hero-content">
           <h1>OpenClaw Docker Setup for Windows</h1>
-          <p className="subtitle">$67 Complete Guide • One-Click Installer • 12 Premium Skills</p>
+          <p className="subtitle">$97 Complete Guide • One-Click Installer • 12 Premium Skills</p>
           <p className="description">
             Stop wrestling with Docker on Windows. Get a production-ready OpenClaw environment in minutes with our comprehensive guide, automated installer, and 12 hand-picked skills.
           </p>
@@ -42,14 +42,14 @@ export default function App() {
               onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'} 
               className="cta-button"
             >
-              Get Access Now - $67
+              Get Access Now - $97
             </button>
             <p className="trust-text">✓ Instant access • ✓ Secure payment • ✓ Lifetime updates</p>
           </div>
 
           <div className="stats">
             <div className="stat">
-              <div className="stat-number">$67</div>
+              <div className="stat-number">$97</div>
               <div className="stat-label">Complete Guide + Installer</div>
             </div>
             <div className="stat">
@@ -145,10 +145,10 @@ export default function App() {
 
       {/* Pricing Section */}
       <section id="pricing" className="pricing">
-        <h2>Get Started - $67</h2>
+        <h2>Get Started - $97</h2>
         <div className="pricing-card">
           <h3>Docker Mastery Blueprint</h3>
-          <div className="price">$67</div>
+          <div className="price">$97</div>
           <p className="price-subtitle">One-time purchase • Instant access • Lifetime updates</p>
           <ul className="price-features">
             <li>✓ Complete 50+ page guide (PDF + Web)</li>
@@ -161,7 +161,7 @@ export default function App() {
             <li>✓ Free updates forever</li>
           </ul>
           <button className="pricing-button" onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'}>
-            Get Started Now - $67
+            Get Started Now - $97
           </button>
         </div>
         
