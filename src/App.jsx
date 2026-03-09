@@ -3,16 +3,20 @@ import PremiumGuide from './PremiumGuide'
 
 export default function App() {
   useEffect(() => {
-    // SEO Meta Tags
-    document.title = 'OpenClaw Docker Complete Guide - $97 | Setup Windows Right'
+    // SEO & Conversion Meta Tags
+    document.title = 'OpenClaw Docker Complete Guide - From $97 | AI Infrastructure for Windows'
     
     const metaTags = [
-      { name: 'description', content: 'Complete Docker setup guide for Windows. 50+ pages, one-click installer, 12 premium skills. Get OpenClaw running in 30 minutes.' },
-      { name: 'keywords', content: 'Docker, Windows, OpenClaw, setup guide, WSL2, automation, AI' },
-      { property: 'og:title', content: 'OpenClaw Docker Complete Guide' },
-      { property: 'og:description', content: 'Professional Docker setup for Windows with OpenClaw.' },
+      { name: 'description', content: 'Professional Docker setup for Windows. Complete 50+ page guide + one-click installer + 12 premium skills. From $97. Lifetime updates. No hassle.' },
+      { name: 'keywords', content: 'Docker Windows, OpenClaw setup, WSL2 guide, AI infrastructure, automation, Windows developer tools' },
+      { property: 'og:title', content: 'OpenClaw Docker Complete Guide - Professional AI Infrastructure' },
+      { property: 'og:description', content: 'Master Docker on Windows with our complete guide. 50+ pages, instant access, lifetime updates. From $97.' },
       { property: 'og:type', content: 'product' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+      { property: 'og:image', content: 'https://landing-page-weld-eight-72.vercel.app/og-image.png' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+      { name: 'theme-color', content: '#6B46C1' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }
     ]
 
     metaTags.forEach(tag => {
@@ -50,7 +54,7 @@ export default function App() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-content">
-          <div className="logo">🏛️ AgoraSystems</div>
+          <div className="logo">⚡ AgoraSystems</div>
           <div className="nav-links">
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
@@ -100,32 +104,32 @@ export default function App() {
         <h2>What You Get</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon">📦</div>
+            <div className="feature-icon">▲</div>
             <h3>One-Click Installer</h3>
             <p>PowerShell script that automates the entire setup process. No manual configuration needed.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">📚</div>
+            <div className="feature-icon">✎</div>
             <h3>50+ Page Guide</h3>
             <p>Step-by-step instructions, troubleshooting, best practices, and optimization tips.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">⚙️</div>
+            <div className="feature-icon">⚙</div>
             <h3>Docker Compose Config</h3>
             <p>Production-ready orchestration with proper networking, volumes, and environment setup.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">🎯</div>
+            <div className="feature-icon">◉</div>
             <h3>12 Premium Skills</h3>
             <p>Pre-selected, tested skills: GitHub, self-improving-agent, weather, and more.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">🔧</div>
+            <div className="feature-icon">⚒</div>
             <h3>Extensions Guide</h3>
             <p>How to install, configure, and use each skill with working examples.</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">🚀</div>
+            <div className="feature-icon">→</div>
             <h3>Launch Ready</h3>
             <p>Everything configured and tested. Go from download to running in under 30 minutes.</p>
           </div>
@@ -145,21 +149,21 @@ export default function App() {
               </div>
             </div>
             <div className="problem-item">
-              <span className="check">❌</span>
+              <span className="check">✗</span>
               <div>
                 <h4>Docker Desktop Complexity</h4>
                 <p>The UI is confusing. The settings are scattered. You need the command line anyway.</p>
               </div>
             </div>
             <div className="problem-item">
-              <span className="check">❌</span>
+              <span className="check">✗</span>
               <div>
                 <h4>Skill Installation Takes Forever</h4>
                 <p>Finding, installing, and configuring skills adds days to your setup.</p>
               </div>
             </div>
             <div className="problem-item">
-              <span className="check">❌</span>
+              <span className="check">✗</span>
               <div>
                 <h4>No Integration Guide</h4>
                 <p>You get Docker working, but then what? Integrating skills is a separate battle.</p>
@@ -261,15 +265,15 @@ export default function App() {
 
       {/* Final CTA */}
       <section className="final-cta">
-        <h2>Ready to Stop Struggling With Docker?</h2>
-        <p>Choose your path and get started today</p>
+        <h2>Stop Struggling With Docker Setup</h2>
+        <p>Get instant access to your complete setup guide + installer + premium skills</p>
         <button 
           className="final-button"
           onClick={() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})}
         >
-          View Pricing - From $97
+          Choose Your Plan - From $97
         </button>
-        <p className="guarantee">🔒 Secure payment • Instant delivery • Lifetime updates</p>
+        <p className="guarantee">✓ Secure Stripe payment • ✓ Instant download • ✓ Lifetime access & updates</p>
       </section>
 
       {/* Footer */}

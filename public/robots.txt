@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /.env*
+Crawl-delay: 1
+
+Sitemap: https://landing-page-weld-eight-72.vercel.app/sitemap.xml
