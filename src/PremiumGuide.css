@@ -1,0 +1,383 @@
+/* Premium Interactive Guide Styles */
+/* Beautiful, professional design for Docker guide */
+
+.premium-guide {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Dark Mode */
+.premium-guide.dark-mode {
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+.premium-guide.dark-mode .guide-header {
+  background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+}
+
+.premium-guide.dark-mode .guide-section {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+.premium-guide.dark-mode .code-block {
+  background: #0d1117;
+  border-color: #30363d;
+}
+
+.premium-guide.dark-mode pre,
+.premium-guide.dark-mode code {
+  background: #0d1117;
+  color: #79c0ff;
+}
+
+/* Header */
+.guide-header {
+  background: linear-gradient(135deg, #6B46C1 0%, #8b5cf6 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.guide-header-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.guide-subtitle {
+  font-size: 1.1rem;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.guide-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.dark-mode-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.read-time {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Table of Contents */
+.table-of-contents {
+  background: #f8f9fa;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #6B46C1;
+}
+
+.premium-guide.dark-mode .table-of-contents {
+  background: #161b22;
+  border-color: #8b5cf6;
+}
+
+.table-of-contents h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.table-of-contents ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.table-of-contents li {
+  margin-bottom: 0.5rem;
+}
+
+.table-of-contents a {
+  color: #6B46C1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.premium-guide.dark-mode .table-of-contents a {
+  color: #79c0ff;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+/* Content Sections */
+.guide-content {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.guide-section {
+  background: #f8f9fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.premium-guide.dark-mode .guide-section {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+.section-header {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e1e4e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.premium-guide.dark-mode .section-header {
+  background: #0d1117;
+  border-color: #30363d;
+}
+
+.section-header:hover {
+  background: #f6f8fa;
+}
+
+.premium-guide.dark-mode .section-header:hover {
+  background: #161b22;
+}
+
+.section-header h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.premium-guide.dark-mode .section-subtitle {
+  color: #8b949e;
+}
+
+.expand-icon {
+  font-size: 0.8rem;
+  color: #6b7280;
+  transition: transform 0.2s;
+}
+
+/* Section Body */
+.section-body {
+  padding: 1.5rem;
+  background: #ffffff;
+}
+
+.premium-guide.dark-mode .section-body {
+  background: #0d1117;
+}
+
+.section-text {
+  margin: 0 0 1.5rem 0;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.premium-guide.dark-mode .section-text {
+  color: #c9d1d9;
+}
+
+.section-text strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.premium-guide.dark-mode .section-text strong {
+  color: #e6edf3;
+}
+
+.section-text ul,
+.section-text ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.section-text li {
+  margin-bottom: 0.5rem;
+}
+
+/* Code Blocks */
+.code-block {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.premium-guide.dark-mode .code-block {
+  background: #0d1117;
+  border-color: #30363d;
+}
+
+.code-header {
+  background: #0f172a;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.premium-guide.dark-mode .code-header {
+  background: #0d1117;
+  border-color: #30363d;
+}
+
+.code-label {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+.copy-button {
+  background: #10b981;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.copy-button:hover {
+  background: #059669;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  color: #e2e8f0;
+}
+
+.code-block code {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+}
+
+/* Callouts */
+.callout {
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid;
+  border-radius: 4px;
+  background: #f0f9ff;
+}
+
+.callout strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.callout-success {
+  border-color: #10b981;
+  background: #ecfdf5;
+}
+
+.callout-info {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.callout-warning {
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.premium-guide.dark-mode .callout {
+  background: transparent;
+  padding: 1rem;
+  border-left: 4px solid;
+  color: #c9d1d9;
+}
+
+/* Footer */
+.guide-footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #e1e4e8;
+  margin-top: 2rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.premium-guide.dark-mode .guide-footer {
+  border-color: #30363d;
+  color: #8b949e;
+}
+
+.guide-footer p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .guide-header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .guide-header {
+    padding: 2rem 1rem;
+  }
+
+  .guide-content {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .section-header {
+    padding: 1rem;
+  }
+
+  .section-body {
+    padding: 1rem;
+  }
+
+  .guide-controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

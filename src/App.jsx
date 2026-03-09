@@ -1,6 +1,36 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import PremiumGuide from './PremiumGuide'
 
 export default function App() {
+  useEffect(() => {
+    // SEO Meta Tags
+    document.title = 'OpenClaw Docker Complete Guide - $97 | Setup Windows Right'
+    
+    const metaTags = [
+      { name: 'description', content: 'Complete Docker setup guide for Windows. 50+ pages, one-click installer, 12 premium skills. Get OpenClaw running in 30 minutes.' },
+      { name: 'keywords', content: 'Docker, Windows, OpenClaw, setup guide, WSL2, automation, AI' },
+      { property: 'og:title', content: 'OpenClaw Docker Complete Guide' },
+      { property: 'og:description', content: 'Professional Docker setup for Windows with OpenClaw.' },
+      { property: 'og:type', content: 'product' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+    ]
+
+    metaTags.forEach(tag => {
+      const element = document.querySelector(`meta[${tag.property ? 'property' : 'name'}="${tag.property || tag.name}"]`)
+      if (element) {
+        element.setAttribute('content', tag.content)
+      } else {
+        const newTag = document.createElement('meta')
+        if (tag.property) {
+          newTag.setAttribute('property', tag.property)
+        } else {
+          newTag.setAttribute('name', tag.name)
+        }
+        newTag.setAttribute('content', tag.content)
+        document.head.appendChild(newTag)
+      }
+    })
+  }, [])
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
