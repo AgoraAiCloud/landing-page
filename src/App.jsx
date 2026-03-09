@@ -43,7 +43,7 @@ export default function App() {
     e.preventDefault()
     if (email) {
       // Open Stripe payment link (Tier 1 - $97)
-      window.location.href = `https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00`
+      window.location.href = `https://buy.stripe.com/cNi9AVgEI6HX1wNehg4ow0h`
       setSubmitted(true)
       setEmail('')
     }
@@ -74,7 +74,7 @@ export default function App() {
           
           <div className="cta-section">
             <button 
-              onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'} 
+              onClick={() => window.location.href='https://buy.stripe.com/cNi9AVgEI6HX1wNehg4ow0h'} 
               className="cta-button"
             >
               Get Access Now - $97
@@ -192,7 +192,7 @@ export default function App() {
             <h3>Docker Setup Guide</h3>
             <div className="price">$97</div>
             <p className="price-subtitle">One-time • Lifetime access • Free updates</p>
-            <button className="pricing-button" onClick={() => window.location.href='https://buy.stripe.com/cNi8wR3RW2rHejzc984ow00'}>
+            <button className="pricing-button" onClick={() => window.location.href='https://buy.stripe.com/cNi9AVgEI6HX1wNehg4ow0h'}>
               Get Started - $97
             </button>
             <ul className="price-features">
@@ -212,7 +212,7 @@ export default function App() {
             <h3>Premium Interactive Guide</h3>
             <div className="price">$197</div>
             <p className="price-subtitle">One-time • Lifetime access • Free updates</p>
-            <button className="pricing-button pricing-button-premium" onClick={() => window.location.href='https://buy.stripe.com/14A6oJ88caYd8Zf8WW4ow03'}>
+            <button className="pricing-button pricing-button-premium" onClick={() => window.location.href='https://buy.stripe.com/4gMaEZ6048Q5fnDb544ow0i'}>
               Get Premium - $197
             </button>
             <ul className="price-features">
